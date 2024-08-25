@@ -27,7 +27,7 @@ python -m setup install
 
 ## Using this csv processor:
 
-handlecsv YOURFILENAME --rowindex YOURROWINDEX --columnname YOURCOLUMNNAME --countrow IFCOUNTROW --countcolumn IFCOUNTCOLUMN //
+handlecsv YOURFILENAME --rowindex YOURROWINDEX --columnname YOURCOLUMNNAME --countrow IFCOUNTROW --countcolumn IFCOUNTCOLUMN   
 
 YOURFILENAME: a csv file needed to be processed    
 YOURROWINDEX: a row index you want to delete in this file    
