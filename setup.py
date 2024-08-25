@@ -9,7 +9,7 @@ setup(
     [console_scripts]
     handlecsv=handlecsv.main:main
     """,
-    install_requires=['click==7.1.2', 'pandas==1.2.0'],
+    install_requires=['click==7.1.2', 'pandas==2.2.0','numpy==1.23.2'],
     version='0.0.1',
     url='https://github.com/billyae/AIPI510_Premodule',
 )
