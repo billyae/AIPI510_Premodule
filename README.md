@@ -27,13 +27,13 @@ python -m setup install
 
 ## Using this csv processor:
 
-handlecsv YOURFILENAME --rowindex YOURROWINDEX --columnname YOURCOLUMNNAME --countrow IFCOUNTROW --countcolumn IFCOUNTCOLUMN
+handlecsv YOURFILENAME --rowindex YOURROWINDEX --columnname YOURCOLUMNNAME --countrow IFCOUNTROW --countcolumn IFCOUNTCOLUMN //
 
-YOURFILENAME: a csv file needed to be processed
-YOURROWINDEX: a row index you want to delete in this file
-YOURCOLUMNNAME: the name of a column you want to delete in this file
-IFCOUNTROW: after doing the processing, whether to show the number of all rows in modified csv file
-IFCOUNTCOLUMN: after doing the processing, whether to show the number of all columns in modified csv file
+YOURFILENAME: a csv file needed to be processed    
+YOURROWINDEX: a row index you want to delete in this file    
+YOURCOLUMNNAME: the name of a column you want to delete in this file    
+IFCOUNTROW: after doing the processing, whether to show the number of all rows in modified csv file    
+IFCOUNTCOLUMN: after doing the processing, whether to show the number of all columns in modified csv file    
 
 the modified files would be in the ./output/ and would be prefixed with modified
 
