@@ -4,10 +4,10 @@ from .handle_csv import delete_row,delete_column,count_row,count_column
 
 @click.command()
 @click.argument('filename',type=click.Path(exists=True))
-@click.option('--rowindex',type=int,help='This is the index of row to be deleted in the csvfile')
-@click.option('--columnname',type=str,help='This is the name of column to be deleted in the csvfile')
-@click.option('--countrow',type=bool,help='This is whether you want to count the number of rows in the csvfile after delete')
-@click.option('--countcolumn',type=bool,help='This is whether you want to count the number of columns in the csvfile after delete')
+@click.option('--rowindex',type=int,default=-1,help='This is the index of row to be deleted in the csvfile')
+@click.option('--columnname',type=str,default="-1",help='This is the name of column to be deleted in the csvfile')
+@click.option('--countrow',type=bool,default=False,help='This is whether you want to count the number of rows in the csvfile after delete')
+@click.option('--countcolumn',type=bool,default=False,help='This is whether you want to count the number of columns in the csvfile after delete')
 def main(filename,rowindex,columnname,countrow,countcolumn):
     """ Simple programe of doing some basic operations with a specific csv file and modify the csv file based on those operations"""
 
@@ -17,7 +17,7 @@ def main(filename,rowindex,columnname,countrow,countcolumn):
         df=delete_row(df,rowindex)
         print(f"The row with {rowindex} index has been successfully deleted!")
     
-    if columnname!=-1:
+    if columnname!="-1":
         df=delete_column(df,columnname)
         print(f"{columnname} has been successfully deleted!")
 
