@@ -12,11 +12,11 @@ cd AIPI510_Premodule
 ## venv
 
 create venv:  
-python -m venv handlecsv  
+python -m venv handlecsvtest  
 
 activate venv:    
-in windows: handlecsv/Scripts/activate    
-in linux: source handlecsv/Scripts/activate
+in windows: handlecsvtest/Scripts/activate    
+in linux: source handlecsvtest/Scripts/activate
 
 ## Installation
 
