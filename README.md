@@ -16,7 +16,7 @@ python -m venv handlecsvtest
 
 activate venv:    
 in windows: handlecsvtest/Scripts/activate    
-in linux: source handlecsvtest/Scripts/activate
+in linux/mac: source handlecsvtest/bin/activate
 
 ## Installation
 
